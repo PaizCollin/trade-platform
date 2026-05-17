@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+  namespace: trade-app
+type: Opaque
+stringData:
+  username: trade_user
+  password: trade_pass
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: trade-config
+  namespace: trade-app
+data:
+  DB_HOST: postgres
+  REDIS_HOST: redis
+  KAFKA_BROKERS: kafka:29092
