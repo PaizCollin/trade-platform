@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/tradedb
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/tradedb
     username: ${DB_USER:trade_user}
     password: ${DB_PASS:trade_pass}
   jpa:
@@ -13,9 +13,6 @@ spring:
       port: 6379
   kafka:
     bootstrap-servers: ${KAFKA_BROKERS:localhost:9092}
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
       group-id: trade-consumer-group
       auto-offset-reset: earliest

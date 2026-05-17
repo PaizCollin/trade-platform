@@ -44,7 +44,7 @@ services:
   trade-service:
     build: .
     ports:
-      - "8000:8000"
+      - "8080:8080"
     environment:
       DB_HOST: postgres
       DB_USER: trade_user

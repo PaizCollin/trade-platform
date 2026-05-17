@@ -37,6 +37,6 @@ public class Trade {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    @NotBlank
-    private int quantity;
+    @NotNull
+    private Integer quantity;
 }
