@@ -1,5 +1,8 @@
-package com.example.demo;
+package com.example.trade.service;
 
+import com.example.trade.domain.Trade;
+import com.example.trade.kafka.TradeProducer;
+import com.example.trade.repository.TradeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

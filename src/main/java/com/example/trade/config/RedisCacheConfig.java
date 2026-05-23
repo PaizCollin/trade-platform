@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.trade.config;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.ObjectMapper;

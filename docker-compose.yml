@@ -51,6 +51,7 @@ services:
       DB_PASS: trade_pass
       REDIS_HOST: redis
       KAFKA_BROKERS: kafka:29092
+      OTEL_COLLECTOR_HOST: jaeger
     depends_on:
       postgres:
         condition: service_healthy
@@ -74,6 +75,12 @@ services:
       GF_SECURITY_ADMIN_PASSWORD: admin
     volumes:
       - grafana_data:/var/lib/grafana
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686"
+      - "4318:4318"
 
 volumes:
   pg_data:

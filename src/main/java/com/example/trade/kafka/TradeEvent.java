@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.trade.kafka;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

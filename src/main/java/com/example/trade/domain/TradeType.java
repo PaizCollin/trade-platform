@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.trade.domain;
 
 public enum TradeType {
     BUY,

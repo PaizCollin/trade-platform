@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.trade.config;
 
-import com.example.demo.TradeEvent;
+import com.example.trade.kafka.TradeEvent;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.trade.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

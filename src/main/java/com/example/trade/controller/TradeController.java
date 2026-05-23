@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.trade.controller;
 
+import com.example.trade.domain.Trade;
+import com.example.trade.service.TradeService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
